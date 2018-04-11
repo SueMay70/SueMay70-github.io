@@ -1,0 +1,166 @@
+.header {
+    
+	font-family: "Warung kopi", "Magnolia Script",Garineldo, "Times New Roman", Times, serif;
+	text-align: center; /* center the text */
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0px;
+    color: white; /* white text color */
+}
+.header h1 {
+	font-family: Calibri, "Warung kopi", "Magnolia Script", "Times New Roman", Times, serif;
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0px;
+	color: white;
+}
+
+.header p {
+	font-family: "Magnolia Script", "Warung kopi", Garineldo, "Times New Roman", Times, serif;
+	text-align: center; /* center the text */
+	margin-top: 0px;
+	padding: 0;
+	text-indent: 50px;
+	color: #FFD700; /* gold text color */
+}
+/* Increase the font size of the <h1> element */
+h1 {
+    font-family: "Warung kopi", "Magnolia Script",Garineldo, "Times New Roman", Times, serif;
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0px;
+	color: white;
+}
+
+h2 {
+	font-family: Calibri, Garineldo, "Times New Roman", Times, serif;
+	color: white;
+}
+
+p{
+	font-family: Calibri, Garieneldo, "Times New Roman", Times, serif;
+    font-size: 0.875em; /* 14px/16=0.875em */
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #483D8B; /* Dark slate color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: right; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* white text color */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+
+/* Column container */
+.row { 
+    display: flex;
+    flex-wrap: wrap;
+	background-color: 	#696969; /* Grey background color */
+	align-content: flex-end;
+	height: 400px;
+}
+
+/* Create three unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: 	#696969; /* Grey background color */
+    padding: 10px; /* Some padding */
+}
+/*Middle column*/
+.middle {
+	flex: 40%; /*Set the width of the middle column*/
+	background-color: #f1f1f1; /* grey background color */
+	padding: 10px; /* Some padding */
+	
+}
+.middle h1 {
+	color: #696969;
+	text-align: center;
+}
+
+/* Main column */
+.main { 
+    flex: 30%; /* Set the width of the main content */
+    /*background-color: 	#696969; /* black background color */
+	text-align: right;
+    padding: 10px; /* Some padding */
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row { 
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+img {
+	border-radius: 10px;
+	border: 0px;
+	display: inline-block;
+	position: relative;
+	vertical-align: text-bottom;
+}
+	
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #2F4F4F; /*Dark slate grey text color*/
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
