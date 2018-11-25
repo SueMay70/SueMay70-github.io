@@ -5,6 +5,9 @@
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Created June 2018 by Susan Mayer on Solid State platform
+	Updated extensively, pages added, and much more content has been included - November 2018.
+	Contact me at webmaster@inkblack.legal
 */
 
 /* Reset */
@@ -47,7 +50,8 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
-
+	
+	
 /* Box Model */
 
 	*, *:before, *:after {
@@ -1773,12 +1777,13 @@
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/ /*Don't want uppercase everywhere.*/
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
+			border-bottom: 0;
 		}
 
 		h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
@@ -2799,7 +2804,7 @@
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
-		padding: 0 1.25em;
+		/*padding: 0 1.25em;--> Removed as it was preventing the Inkblack logo from seating completely left*/
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -2998,13 +3003,13 @@
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #4c5c96;
-			border-radius: 5px;
+			background: #3C4978;
+			border-radius: 10px;
 			display: block;
 			max-width: 100%;
 			opacity: 0;
 			position: relative;
-			width: 18em;
+			width: 16em;
 		}
 
 		#menu h2 {
@@ -3121,14 +3126,14 @@
 
 			#banner .logo .icon {
 				border-radius: 100%;
-				border: solid 2px rgba(255, 255, 255, 0.125);
+				border: solid 3px rgb(120,107,60);
 				cursor: default;
 				display: inline-block;
 				font-size: 2em;
-				height: 2.25em;
-				line-height: 2.25em;
+				height: 2em;
+				line-height: 2em;
 				text-align: center;
-				width: 2.25em;
+				width: 2em;
 			}
 
 		#banner h2 {
@@ -3149,8 +3154,8 @@
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
-			font-size: 2.25em;
+			border-bottom: solid 3px rgba(255, 255, 255, 0.125);
+			font-size: 1.6em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
 		}
@@ -3175,10 +3180,10 @@
 			opacity: 1;
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 1em;
-			font-weight: 200;
+			font-weight: 100;
 			letter-spacing: 0.1em;
-			line-height: 2;
-			text-transform: uppercase;
+			line-height: 1;
+			/*text-transform: uppercase;*/ /* Taken out to stop text to the right of the logo bar being uppercase*/
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3288,7 +3293,7 @@
 			font-weight: 200;
 			letter-spacing: 0.1em;
 			line-height: 2;
-			text-transform: uppercase;
+			/*text-transform: uppercase;*/ /*Changed to get lowercase for slogan beside logo in header*/
 		}
 
 	@media screen and (max-width: 1280px) {
